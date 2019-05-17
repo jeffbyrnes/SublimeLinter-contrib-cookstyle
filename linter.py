@@ -26,15 +26,10 @@ class Cookstyle(Linter):
         r'(:?(?P<warning>[RCW])|(?P<error>[EF])): '
         r'(?P<message>.+)'
     )
-    multiline = False
+
     defaults = {
       "selector": "source.ruby"
     }
-    error_stream = util.STREAM_BOTH
-    word_re = None
-    inline_settings = None
-    inline_overrides = None
-    comment_re = r'\s*#'
 
     def cmd(self):
         """Build command, using STDIN if a file path can be determined."""
