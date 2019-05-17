@@ -28,7 +28,7 @@ class Cookstyle(Linter):
     )
 
     defaults = {
-      "selector": "source.ruby"
+        'selector': 'source.ruby - text.html - text.haml',
     }
 
     def cmd(self):
