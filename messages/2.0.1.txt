@@ -1,0 +1,5 @@
+SublimeLinter-contrib-cookstyle 2.0.1
+-------------------------------------
+
+* Clean up unnecessary/default settings
+* Avoid running in some contexts (borrowed from SublimeLinter-contrib-rubocop)
